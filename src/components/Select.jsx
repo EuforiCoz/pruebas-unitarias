@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 export const Select = ({ options, value }) => {
+  //Estado local en el cual vamos a almacenar la opción seleccionada
   const [selectedOption, setSelectedOption] = useState(value);
 
+  //Función que maneja el cambio de selección en el elemento {select}
   const handleSelectChange = (event) => {
     const value = event.target.value;
     setSelectedOption(value);

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { getProduct, getProducts } from '../service/Api';
-import { TextField } from '@mui/material';
+import { getProduct, getProducts } from '../service/Api'; //Importamos las funciones para obtener los productos de la API
+import { TextField } from '@mui/material'; //Importamos el componente TextField de mui
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
